@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>PHPython Day</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:300|Roboto+Slab:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+<div class="hero-shot full">
+	<div class="container cell">
+		<!-- <h1 class="logo bounceIn">PHPython</h1> -->
+		<p class="strong looong">PHPython Day</p>
+		<p class="upper">SECOMP, Universidade Federal de Sergipe</p>
+	</div><!-- end container -->
+</div><!-- end hero-shot -->
+<div class="hero-message">
+	<div class="container">
+		<h2>Venha nos acompanhar nas palestras sobre Python e PHP focadas nas tecnologias Google</h2>
+	</div><!-- end container -->
+</div><!-- end hero-message -->
+<div class="banner-white">
+	<div class="container">
+		<h3>Palestras</h3>
+		<div class="stamps">
+			<div id="brand-1" class="span-1">
+				<h4>Geolocalização</h4>
+				<p>Saiba um pouco mais sobre esse tema, e o porque de usar uma linguagem server-side para faze-la.<br /><small> Jefersson Nathan / <a href="http://twitter.com/malukenho">@malukenho</a></small></p>
+			</div><!-- end span -->
+			<div id="brand-2" class="span-2">
+				<h4>Python + Google</h4>
+				<p>Palestra sobre aplicações web com Python e Google App Engine<br />
+					<small>Rodrigo Amaral / <a href="http://twitter.com/rodrigoamaral">@rodrigoamaral</a></small></p>
+			</div><!-- end span -->
+			<div id="brand-3" class="span-3">
+				<h4>APOIO</h4>
+				<p>
+					<a href="http://www.neoworking.com.br/" target="_blank">
+						<figure>
+							<img id="lines" alt="paths to the meat" src="img/neoworking.png">
+						</figure>
+					</a>
+				</p>
+			</div><!-- end span -->
+		</div><!-- end stamps -->
+		<div class="row">
+			<figure>
+				<img id="lines" alt="paths to the meat" src="img/neoworking.png">
+			</figure>
+		</div><!-- end row -->
+		<div class="front">
+			<a href="http://pug-se.github.io/">
+				<figure class="span-3" style="float:left">
+					<img alt="Python Sergipe User Group" src="img/pugse.png">
+				</figure>
+			</a>
+
+			<a href="http://www.facebook.com/groups/GDGAracaju/">
+				<figure class="span-3" style="float:left; margin: 5.5% 14%">
+					<img alt="Google Developer Group Aracaju" src="img/gdg.svg" width="250">
+				</figure>
+			</a>
+
+			<a href="http://phpse.net/">
+				<figure class="span-3" style="float:left; margin: 1% 0">
+					<img alt="PHP Sergipe User Group" src="img/phpse.png" width="130">
+				</figure>
+			</a>
+		</div><!-- end front -->
+	</div><!-- end container -->
+</div><!-- end banner-white -->
+<div class="banner-red">
+	<div class="container">
+		
+	</div><!-- end container -->
+</div><!-- end banner-red -->
+<footer class="banner-red">
+	<div class="container">
+		<p>
+			&copy; PUG-SE, PHP Sergipe e GDG Aracaju 2013. All rights reserved.
+		</p>
+	</div><!-- end container -->
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+$(window).scroll(function() {
+	
+	$('#brand-1').each(function(){
+		var imagePos = $(this).offset().top;
+		var topOfWindow = $(window).scrollTop();
+		
+		if (imagePos < topOfWindow+500) {
+			$(this).addClass("fadeInUp");
+		}
+	});
+
+	$('#brand-2').each(function(){
+		var imagePos = $(this).offset().top;
+		var topOfWindow = $(window).scrollTop();
+
+		if (imagePos < topOfWindow+550) {
+			$(this).addClass("fadeInUp");
+		}
+	});
+	
+	$('#brand-3').each(function(){
+		var imagePos = $(this).offset().top;
+		var topOfWindow = $(window).scrollTop();
+
+		if (imagePos < topOfWindow+500) {
+			$(this).addClass("fadeInUp");
+		}
+	});
+	
+	$('#lines').each(function(){
+		var imagePos = $(this).offset().top;
+		var topOfWindow = $(window).scrollTop();
+		
+		if (imagePos < topOfWindow+600) {
+			$(this).addClass("fadeIn");
+		}
+	});
+
+});
+</script>
+</body>
+</html>
