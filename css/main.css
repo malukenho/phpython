@@ -437,10 +437,6 @@ p.upper {
 	clear: both;
 }
 
-#brand-1, #brand-2, #brand-3 {
-	visibility: hidden;
-}
-
 .stamps [class*="span"] {
 	display: block;
 	float: left;

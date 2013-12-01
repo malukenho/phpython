@@ -1,0 +1,2 @@
+  5. O Vim salvará as linhas selecionadas no arquivo TESTE. Use  :!dir  ou
+     !:ls para vê-lo. Não o apague agora! Nós o usaremos na próxima lição.
